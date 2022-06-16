@@ -31,17 +31,18 @@ function App() {
           <h1 className="title">Список задач: {todos.length}</h1>
         </header>
         <TodoForm addTodo={addTodo} />
-        {todos.map((todo) => {
-          return (
-            <Todo 
-              todo={todo}
-              key={todo.id} 
-              toggleTodo={handleToggle}
-              deleteTodo={deleteTodo}
-            />
-          )
-        })}
-
+        <ul className="list">
+          {todos.map((todo) => {
+            return (
+              <Todo 
+                todo={todo}
+                key={todo.id} 
+                toggleTodo={handleToggle}
+                deleteTodo={deleteTodo}
+              />
+            )
+          })}
+        </ul>
       </div>
   );
 }
