@@ -1,6 +1,6 @@
 # Todo List
 
-[Project Link](https://todolist-react-rho.vercel.app/)
+[Project Link](https://todolist-react-lyart.vercel.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Functionality:
