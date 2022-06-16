@@ -1,6 +1,6 @@
 # Todo List
 
-[Project Link](https://todolist-sooty.vercel.app/)
+[Project Link](todo-react-4zucvbdha-lifein2020.vercel.app)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Functionality:
