@@ -10,7 +10,7 @@ function TodoForm({ addTodo }) {
     }
 
     const handleChange = (e) => {
-         setUserInput(e.currentTarget.value) // получаем событие, из которого получать значения и отправлять его в useState используя setUserInput
+         setUserInput(e.currentTarget.value)
     }
 
     const handleKeyPress = (e) => {
@@ -32,7 +32,6 @@ function TodoForm({ addTodo }) {
                 placeholder="Введите значение"
             />
             <button className="form__button">Добавить</button>
-
         </form>
     )
 }

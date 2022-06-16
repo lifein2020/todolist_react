@@ -3,26 +3,23 @@ import Todo from './Todo';
 import TodoForm from './TodoForm';
 
 function App() {
-  //будем хранить список задач в компоненте в виде пустого массива
   const [todos, setTodos] = useState([]);
 
-  // для добавления задачи
   const addTodo = (userInput) => {
     if(userInput) {
       const newItem = {
         id: Math.random().toString(30).substr(2,9),
         task: userInput,
-        complete: false, // выполненная или невыполненная задача
+        complete: false,
       }
-      setTodos([...todos, newItem]) // добавляем новый элемент в массив
+      setTodos([...todos, newItem])
     }
   }
 
-  //удаление задачи 
-const removeTodo = (id ) => {
-  setTodos([...todos.filter(todo => todo.id !== id)])
-}
-  //переключение задач
+  const removeTodo = (id ) => {
+    setTodos([...todos.filter(todo => todo.id !== id)])
+  }
+
   const handleToggle = (id) => {
     setTodos([ ...todos.map(todo => 
       todo.id === id ? { ...todo, complete: !todo.complete } : {...todo })])
