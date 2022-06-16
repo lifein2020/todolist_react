@@ -8,7 +8,7 @@ function App() {
   const addTodo = (userInput) => {
     if(userInput) {
       const newItem = {
-        id: Math.random().toString(30).substr(2,9),
+        id: Math.random().toString().slice(2, 10),
         task: userInput,
         complete: false,
       }
@@ -16,7 +16,7 @@ function App() {
     }
   }
 
-  const removeTodo = (id ) => {
+  const deleteTodo = (id) => {
     setTodos([...todos.filter(todo => todo.id !== id)])
   }
 
@@ -37,7 +37,7 @@ function App() {
               todo={todo}
               key={todo.id} 
               toggleTodo={handleToggle}
-              removeTodo={removeTodo}
+              deleteTodo={deleteTodo}
             />
           )
         })}

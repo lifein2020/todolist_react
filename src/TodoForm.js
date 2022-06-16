@@ -29,9 +29,9 @@ function TodoForm({ addTodo }) {
                 type="text"
                 onChange={handleChange}
                 onKeyDown={handleKeyPress}
-                placeholder="Введите значение"
+                placeholder="Введите задачу"
             />
-            <button className="form__button">Добавить</button>
+            <button className="form__button">+</button>
         </form>
     )
 }
