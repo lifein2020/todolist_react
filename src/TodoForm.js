@@ -20,15 +20,18 @@ function TodoForm({ addTodo }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form 
+            className="form"
+            onSubmit={handleSubmit}>
             <input
+                className="form__input"
                 value={userInput}
                 type="text"
                 onChange={handleChange}
                 onKeyDown={handleKeyPress}
                 placeholder="Введите значение"
             />
-            <button>Сохранить</button>
+            <button className="form__button">Добавить</button>
 
         </form>
     )
