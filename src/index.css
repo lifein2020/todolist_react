@@ -65,11 +65,12 @@
   font-weight: lighter;
   text-align: center;
   color: #FFFFFF; 
-  transition: opacity .1s ease-in;
+  opacity: 0.6;
+  transition: .1s;
 }
 
 .form__button:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .item {
@@ -89,7 +90,7 @@
   text-align: left;
   word-break:break-all;
   opacity: 1;
-  transition: opacity .1s ease-in;
+  transition: opacity .2s ease-in;
 }
 
 .item__text:hover {
@@ -112,12 +113,12 @@
   line-height: 22px;
   text-align: center;
   color: #FFFFFF;
-  opacity: 1;
-  transition: opacity .1s ease-in;
+  opacity: 0.6;
+  transition: .2s;
 }
 
 .item__button:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px)  {
